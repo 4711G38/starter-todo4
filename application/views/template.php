@@ -18,20 +18,6 @@
             <div id="content">
                 <h1>{pagetitle}</h1>
                 {content}
-                <table class="table">
-                <tr>
-                    <th>Id</th>
-                    <th>Task</th>
-                    <th>Priority</th>
-                </tr>
-                    {display_tasks}
-                    <tr>
-                        <td>{id}</td>
-                        <td>{task}</td>
-                        <td>{priority}</td>
-                    </tr>
-                    {/display_tasks}
-                </table>   
             </div> 
             
             <div id="footer" class="span12">
