@@ -13,13 +13,19 @@
             <div class="navbar">
                 <div class="navbar-inner">
                     {menubar}
-				        </div>
+								</div>
             </div>
             <div id="content">
                 <h1>{pagetitle}</h1>
-                {content}
-            </div> 
-            
+                <div class="row">
+									<div class="col-md-12 col-lg-6">
+										{leftside}
+									</div>
+									<div class="col-md-12 col-lg-6">
+										{rightside}
+									</div>
+								</div>
+            </div>
             <div id="footer" class="span12">
                 Copyright &copy; 2017,  <a href="mailto:someone@somewhere.com">Me</a>.
             </div>
