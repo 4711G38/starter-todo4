@@ -20,7 +20,8 @@ class Welcome extends Application
 	public function index()
 	{
 		$this->data['pagebody'] = 'homepage';
-		$this->render(); 
-	}
+		$this->render();
+        
+    }
 
 }
