@@ -37,14 +37,13 @@
 
  }
 
- // return -1, 0, or 1 of $a's category name is earlier, equal to, or later than $b's
- function orderByCategory($a, $b)
- {
-     if ($a->group < $b->group)
-         return -1;
-     elseif ($a->group > $b->group)
-         return 1;
-     else
-         return 0;
- }
+// return -1, 0, or 1 of $a's category name is earlier, equal to, or later than $b's
+function orderByCategory($a, $b)
+{
+   if ($a->group < $b->group)
+       return -1;
+   elseif ($a->group > $b->group)
+       return 1;
+   else
+       return 0;
 }
