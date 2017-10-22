@@ -88,7 +88,7 @@ class Mtce extends Application {
         {
             if (empty($task->id))
             {
-                                $task->id = $this->tasks->highest() + 1;
+                $task->id = $this->tasks->highest() + 1;
                 $this->tasks->add($task);
                 $this->alert('Task ' . $task->id . ' added', 'success');
             } else
@@ -141,6 +141,9 @@ class Mtce extends Application {
         $fields = array(
             'ftask'      => form_label('Task description') . form_input('task', $task->task),
             'fpriority'  => form_label('Priority') . form_dropdown('priority', $this->app->priority(), $task->priority),
+            'fsize'      => form_label('Task size') . form_dropdown('size', $this->app->size(), $task->size),
+            'fgroup'     => form_label('Task group') . form_dropdown('group', $this->app->group(), $task->group),
+            'fstatus'    => form_label('Task status') . form_dropdown('status', $this->app->status(), $task->status),
             'zsubmit'    => form_submit('submit', 'Update the TODO task'),
         );
         $this->data = array_merge($this->data, $fields);
