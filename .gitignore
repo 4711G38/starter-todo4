@@ -18,3 +18,5 @@ application/logs/*
 /nbproject/private/
 
 tmp/*
+
+composer.phar
