@@ -22,7 +22,7 @@ class TaskListTest extends TestCase {
 
         $uncompletedTaskCount = count($allTasks) - $completedTaskCount;
 
-        $this->assertGreaterThan($uncompletedTaskCount, $completedTaskCount);
+        $this->assertGreaterThan($completedTaskCount, $uncompletedTaskCount);
     }
 
 }
