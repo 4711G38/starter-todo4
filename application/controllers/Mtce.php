@@ -77,9 +77,13 @@ class Mtce extends Application {
         $this->load->library('form_validation');
         $this->form_validation->set_rules($this->tasks->rules());
 
+        // Remove the submit input field that gets merged with our data...
+        $newTaskData = $this->input->post();
+        unset($newTaskData['submit']);
+
         // retrieve & update data transfer buffer
         $task = (array) $this->session->userdata('task');
-        $task = array_merge($task, $this->input->post());
+        $task = array_merge($task, $newTaskData);
         $task = (object) $task;  // convert back to object
         $this->session->set_userdata('task', (object) $task);
 
