@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /Applications/MAMP/htdocs/timjonathan/system/core</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../.css/bootstrap.min.css" rel="stylesheet">
+  <link href="../.css/nv.d3.min.css" rel="stylesheet">
+  <link href="../.css/style.css" rel="stylesheet">
+  <!--[if lt IE 9]>
+  <script src="../.js/html5shiv.min.js"></script>
+  <script src="../.js/respond.min.js"></script>
+  <![endif]-->
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div class="row">
+     <div class="col-md-12">
+      <ol class="breadcrumb">
+        <li><a href="../index.html">/Applications/MAMP/htdocs/timjonathan/system</a></li>
+        <li><a href="index.html">core</a></li>
+        <li class="active">(Dashboard)</li>
+
+      </ol>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Benchmark.php.html#52">CI_Benchmark</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.php.html#51">CI_Config</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller.php.html#52">CI_Controller</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions.php.html#49">CI_Exceptions</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Hooks.php.html#51">CI_Hooks</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#51">CI_Input</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lang.php.html#49">CI_Lang</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#51">CI_Loader</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#51">CI_Output</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Router.php.html#51">CI_Router</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#49">CI_Security</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#51">CI_URI</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utf8.php.html#51">CI_Utf8</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Log.php.html#49">CI_Log</a></td><td class="text-right">8%</td></tr>
+       <tr><td><a href="Model.php.html#49">CI_Model</a></td><td class="text-right">66%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Loader.php.html#51">CI_Loader</a></td><td class="text-right">29070</td></tr>
+       <tr><td><a href="Input.php.html#51">CI_Input</a></td><td class="text-right">11990</td></tr>
+       <tr><td><a href="Output.php.html#51">CI_Output</a></td><td class="text-right">9702</td></tr>
+       <tr><td><a href="Security.php.html#49">CI_Security</a></td><td class="text-right">8190</td></tr>
+       <tr><td><a href="URI.php.html#51">CI_URI</a></td><td class="text-right">5700</td></tr>
+       <tr><td><a href="Router.php.html#51">CI_Router</a></td><td class="text-right">2970</td></tr>
+       <tr><td><a href="Config.php.html#51">CI_Config</a></td><td class="text-right">1892</td></tr>
+       <tr><td><a href="Hooks.php.html#51">CI_Hooks</a></td><td class="text-right">992</td></tr>
+       <tr><td><a href="Log.php.html#49">CI_Log</a></td><td class="text-right">969</td></tr>
+       <tr><td><a href="Lang.php.html#49">CI_Lang</a></td><td class="text-right">702</td></tr>
+       <tr><td><a href="Exceptions.php.html#49">CI_Exceptions</a></td><td class="text-right">552</td></tr>
+       <tr><td><a href="Utf8.php.html#51">CI_Utf8</a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="Benchmark.php.html#52">CI_Benchmark</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Controller.php.html#52">CI_Controller</a></td><td class="text-right">12</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Benchmark.php.html#70"><abbr title="CI_Benchmark::mark">mark</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Router.php.html#473"><abbr title="CI_Router::fetch_method">fetch_method</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Router.php.html#248"><abbr title="CI_Router::_set_request">_set_request</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Router.php.html#290"><abbr title="CI_Router::_set_default_controller">_set_default_controller</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Router.php.html#332"><abbr title="CI_Router::_validate_request">_validate_request</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Router.php.html#370"><abbr title="CI_Router::_parse_routes">_parse_routes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Router.php.html#434"><abbr title="CI_Router::set_class">set_class</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Router.php.html#447"><abbr title="CI_Router::fetch_class">fetch_class</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Router.php.html#460"><abbr title="CI_Router::set_method">set_method</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Router.php.html#487"><abbr title="CI_Router::set_directory">set_directory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Router.php.html#124"><abbr title="CI_Router::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Router.php.html#510"><abbr title="CI_Router::fetch_directory">fetch_directory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#170"><abbr title="CI_Security::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#206"><abbr title="CI_Security::csrf_verify">csrf_verify</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#293"><abbr title="CI_Security::csrf_show_error">csrf_show_error</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#306"><abbr title="CI_Security::get_csrf_hash">get_csrf_hash</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#319"><abbr title="CI_Security::get_csrf_token_name">get_csrf_token_name</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#352"><abbr title="CI_Security::xss_clean">xss_clean</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Router.php.html#155"><abbr title="CI_Router::_set_routing">_set_routing</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#835"><abbr title="CI_Output::substr">substr</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#598"><abbr title="CI_Security::get_random_bytes">get_random_bytes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#338"><abbr title="CI_Output::set_status_header">set_status_header</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#165"><abbr title="CI_Output::get_output">get_output</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#180"><abbr title="CI_Output::set_output">set_output</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#196"><abbr title="CI_Output::append_output">append_output</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#216"><abbr title="CI_Output::set_header">set_header</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#240"><abbr title="CI_Output::set_content_type">set_content_type</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#279"><abbr title="CI_Output::get_content_type">get_content_type</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#300"><abbr title="CI_Output::get_header">get_header</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#352"><abbr title="CI_Output::enable_profiler">enable_profiler</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#818"><abbr title="CI_Output::strlen">strlen</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#369"><abbr title="CI_Output::set_profiler_sections">set_profiler_sections</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#393"><abbr title="CI_Output::cache">cache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#415"><abbr title="CI_Output::_display">_display</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#553"><abbr title="CI_Output::_write_cache">_write_cache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#659"><abbr title="CI_Output::_display_cache">_display_cache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#737"><abbr title="CI_Output::delete_cache">delete_cache</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#792"><abbr title="CI_Output::set_cache_header">set_cache_header</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#577"><abbr title="CI_Security::xss_hash">xss_hash</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#667"><abbr title="CI_Security::entity_decode">entity_decode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Model.php.html#71"><abbr title="CI_Model::__get">__get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#590"><abbr title="CI_URI::rsegment_array">rsegment_array</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#409"><abbr title="CI_URI::ruri_to_assoc">ruri_to_assoc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#428"><abbr title="CI_URI::_uri_to_assoc">_uri_to_assoc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#496"><abbr title="CI_URI::assoc_to_uri">assoc_to_uri</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#519"><abbr title="CI_URI::slash_segment">slash_segment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#535"><abbr title="CI_URI::slash_rsegment">slash_rsegment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#555"><abbr title="CI_URI::_slash_segment">_slash_segment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#578"><abbr title="CI_URI::segment_array">segment_array</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#602"><abbr title="CI_URI::total_segments">total_segments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#364"><abbr title="CI_URI::rsegment">rsegment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#614"><abbr title="CI_URI::total_rsegments">total_rsegments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#626"><abbr title="CI_URI::uri_string">uri_string</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#638"><abbr title="CI_URI::ruri_string">ruri_string</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utf8.php.html#60"><abbr title="CI_Utf8::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utf8.php.html#90"><abbr title="CI_Utf8::clean_string">clean_string</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utf8.php.html#119"><abbr title="CI_Utf8::safe_ascii_for_xml">safe_ascii_for_xml</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utf8.php.html#135"><abbr title="CI_Utf8::convert_to_utf8">convert_to_utf8</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#391"><abbr title="CI_URI::uri_to_assoc">uri_to_assoc</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#344"><abbr title="CI_URI::segment">segment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#742"><abbr title="CI_Security::sanitize_filename">sanitize_filename</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#992"><abbr title="CI_Security::_filter_attributes">_filter_attributes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#772"><abbr title="CI_Security::strip_image_tags">strip_image_tags</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#793"><abbr title="CI_Security::_urldecodespaces">_urldecodespaces</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#814"><abbr title="CI_Security::_compact_exploded_words">_compact_exploded_words</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#830"><abbr title="CI_Security::_sanitize_naughty_html">_sanitize_naughty_html</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#925"><abbr title="CI_Security::_js_link_removal">_js_link_removal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#953"><abbr title="CI_Security::_js_img_removal">_js_img_removal</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#975"><abbr title="CI_Security::_convert_attribute">_convert_attribute</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#1015"><abbr title="CI_Security::_decode_entity">_decode_entity</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#326"><abbr title="CI_URI::filter_uri">filter_uri</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#1038"><abbr title="CI_Security::_do_never_allowed">_do_never_allowed</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security.php.html#1057"><abbr title="CI_Security::_csrf_set_hash">_csrf_set_hash</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#99"><abbr title="CI_URI::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#151"><abbr title="CI_URI::_set_uri_string">_set_uri_string</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#197"><abbr title="CI_URI::_parse_request_uri">_parse_request_uri</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#255"><abbr title="CI_URI::_parse_query_string">_parse_query_string</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#284"><abbr title="CI_URI::_parse_argv">_parse_argv</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="URI.php.html#300"><abbr title="CI_URI::_remove_relative_directory">_remove_relative_directory</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Output.php.html#139"><abbr title="CI_Output::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Log.php.html#282"><abbr title="CI_Log::substr">substr</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Benchmark.php.html#95"><abbr title="CI_Benchmark::elapsed_time">elapsed_time</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#314"><abbr title="CI_Input::server">server</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#138"><abbr title="CI_Input::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#177"><abbr title="CI_Input::_fetch_from_array">_fetch_from_array</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#240"><abbr title="CI_Input::get">get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#254"><abbr title="CI_Input::post">post</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#268"><abbr title="CI_Input::post_get">post_get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#284"><abbr title="CI_Input::get_post">get_post</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#300"><abbr title="CI_Input::cookie">cookie</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#330"><abbr title="CI_Input::input_stream">input_stream</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Hooks.php.html#133"><abbr title="CI_Hooks::call_hook">call_hook</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#362"><abbr title="CI_Input::set_cookie">set_cookie</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#422"><abbr title="CI_Input::ip_address">ip_address</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#559"><abbr title="CI_Input::valid_ip">valid_ip</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#584"><abbr title="CI_Input::user_agent">user_agent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#602"><abbr title="CI_Input::_sanitize_globals">_sanitize_globals</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#670"><abbr title="CI_Input::_clean_input_data">_clean_input_data</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#725"><abbr title="CI_Input::_clean_input_keys">_clean_input_keys</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Hooks.php.html#165"><abbr title="CI_Hooks::_run_hook">_run_hook</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Hooks.php.html#88"><abbr title="CI_Hooks::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#802"><abbr title="CI_Input::get_request_header">get_request_header</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.php.html#336"><abbr title="CI_Config::_uri_string">_uri_string</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Benchmark.php.html#128"><abbr title="CI_Benchmark::memory_usage">memory_usage</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.php.html#84"><abbr title="CI_Config::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.php.html#126"><abbr title="CI_Config::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.php.html#197"><abbr title="CI_Config::item">item</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.php.html#215"><abbr title="CI_Config::slash_item">slash_item</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.php.html#242"><abbr title="CI_Config::site_url">site_url</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.php.html#305"><abbr title="CI_Config::base_url">base_url</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.php.html#359"><abbr title="CI_Config::system_url">system_url</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions.php.html#236"><abbr title="CI_Exceptions::show_php_error">show_php_error</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Config.php.html#374"><abbr title="CI_Config::set_item">set_item</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller.php.html#66"><abbr title="CI_Controller::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller.php.html#91"><abbr title="CI_Controller::get_instance">get_instance</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions.php.html#83"><abbr title="CI_Exceptions::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions.php.html#102"><abbr title="CI_Exceptions::log_exception">log_exception</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions.php.html#119"><abbr title="CI_Exceptions::show_404">show_404</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions.php.html#157"><abbr title="CI_Exceptions::show_error">show_error</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exceptions.php.html#190"><abbr title="CI_Exceptions::show_exception">show_exception</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#758"><abbr title="CI_Input::request_headers">request_headers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#836"><abbr title="CI_Input::is_ajax_request">is_ajax_request</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Log.php.html#265"><abbr title="CI_Log::strlen">strlen</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#876"><abbr title="CI_Loader::_ci_load">_ci_load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#663"><abbr title="CI_Loader::helpers">helpers</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#679"><abbr title="CI_Loader::language">language</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#698"><abbr title="CI_Loader::config">config</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#717"><abbr title="CI_Loader::driver">driver</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#773"><abbr title="CI_Loader::add_package_path">add_package_path</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#800"><abbr title="CI_Loader::get_package_paths">get_package_paths</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#817"><abbr title="CI_Loader::remove_package_path">remove_package_path</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#1010"><abbr title="CI_Loader::_ci_load_library">_ci_load_library</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#851"><abbr title="CI_Input::is_cli_request">is_cli_request</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#1104"><abbr title="CI_Loader::_ci_load_stock_library">_ci_load_stock_library</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#1194"><abbr title="CI_Loader::_ci_init_library">_ci_init_library</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#1294"><abbr title="CI_Loader::_ci_autoloader">_ci_autoloader</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#1376"><abbr title="CI_Loader::_ci_prepare_view_vars">_ci_prepare_view_vars</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#1406"><abbr title="CI_Loader::_ci_get_component">_ci_get_component</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Log.php.html#121"><abbr title="CI_Log::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Log.php.html#252"><abbr title="CI_Log::_format_line">_format_line</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#586"><abbr title="CI_Loader::helper">helper</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#573"><abbr title="CI_Loader::get_vars">get_vars</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#559"><abbr title="CI_Loader::get_var">get_var</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#543"><abbr title="CI_Loader::clear_vars">clear_vars</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#867"><abbr title="CI_Input::method">method</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Input.php.html#884"><abbr title="CI_Input::__get">__get</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lang.php.html#70"><abbr title="CI_Lang::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lang.php.html#88"><abbr title="CI_Lang::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Lang.php.html#190"><abbr title="CI_Lang::line">line</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#136"><abbr title="CI_Loader::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#155"><abbr title="CI_Loader::initialize">initialize</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#172"><abbr title="CI_Loader::is_loaded">is_loaded</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#190"><abbr title="CI_Loader::library">library</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#234"><abbr title="CI_Loader::model">model</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#370"><abbr title="CI_Loader::database">database</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#406"><abbr title="CI_Loader::dbutil">dbutil</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#438"><abbr title="CI_Loader::dbforge">dbforge</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#487"><abbr title="CI_Loader::view">view</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#501"><abbr title="CI_Loader::file">file</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Loader.php.html#520"><abbr title="CI_Loader::vars">vars</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Utf8.php.html#159"><abbr title="CI_Utf8::is_ascii">is_ascii</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Log.php.html#170"><abbr title="CI_Log::write_log">write_log</abbr></a></td><td class="text-right">16%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Loader.php.html#234"><abbr title="CI_Loader::model">model</abbr></a></td><td class="text-right">600</td></tr>
+       <tr><td><a href="Input.php.html#422"><abbr title="CI_Input::ip_address">ip_address</abbr></a></td><td class="text-right">506</td></tr>
+       <tr><td><a href="Lang.php.html#88"><abbr title="CI_Lang::load">load</abbr></a></td><td class="text-right">462</td></tr>
+       <tr><td><a href="Output.php.html#415"><abbr title="CI_Output::_display">_display</abbr></a></td><td class="text-right">462</td></tr>
+       <tr><td><a href="Hooks.php.html#165"><abbr title="CI_Hooks::_run_hook">_run_hook</abbr></a></td><td class="text-right">380</td></tr>
+       <tr><td><a href="Loader.php.html#876"><abbr title="CI_Loader::_ci_load">_ci_load</abbr></a></td><td class="text-right">380</td></tr>
+       <tr><td><a href="Loader.php.html#1294"><abbr title="CI_Loader::_ci_autoloader">_ci_autoloader</abbr></a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="Input.php.html#362"><abbr title="CI_Input::set_cookie">set_cookie</abbr></a></td><td class="text-right">272</td></tr>
+       <tr><td><a href="Loader.php.html#1194"><abbr title="CI_Loader::_ci_init_library">_ci_init_library</abbr></a></td><td class="text-right">240</td></tr>
+       <tr><td><a href="Log.php.html#121"><abbr title="CI_Log::__construct">__construct</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="Router.php.html#155"><abbr title="CI_Router::_set_routing">_set_routing</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="Output.php.html#553"><abbr title="CI_Output::_write_cache">_write_cache</abbr></a></td><td class="text-right">210</td></tr>
+       <tr><td><a href="Config.php.html#126"><abbr title="CI_Config::load">load</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="Security.php.html#352"><abbr title="CI_Security::xss_clean">xss_clean</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="Loader.php.html#586"><abbr title="CI_Loader::helper">helper</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="URI.php.html#197"><abbr title="CI_URI::_parse_request_uri">_parse_request_uri</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="Output.php.html#659"><abbr title="CI_Output::_display_cache">_display_cache</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="Security.php.html#598"><abbr title="CI_Security::get_random_bytes">get_random_bytes</abbr></a></td><td class="text-right">156</td></tr>
+       <tr><td><a href="Loader.php.html#1104"><abbr title="CI_Loader::_ci_load_stock_library">_ci_load_stock_library</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="Input.php.html#177"><abbr title="CI_Input::_fetch_from_array">_fetch_from_array</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="URI.php.html#428"><abbr title="CI_URI::_uri_to_assoc">_uri_to_assoc</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="Security.php.html#667"><abbr title="CI_Security::entity_decode">entity_decode</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="Log.php.html#170"><abbr title="CI_Log::write_log">write_log</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Router.php.html#370"><abbr title="CI_Router::_parse_routes">_parse_routes</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Loader.php.html#1010"><abbr title="CI_Loader::_ci_load_library">_ci_load_library</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="URI.php.html#99"><abbr title="CI_URI::__construct">__construct</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Security.php.html#830"><abbr title="CI_Security::_sanitize_naughty_html">_sanitize_naughty_html</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Input.php.html#602"><abbr title="CI_Input::_sanitize_globals">_sanitize_globals</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Config.php.html#242"><abbr title="CI_Config::site_url">site_url</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Security.php.html#206"><abbr title="CI_Security::csrf_verify">csrf_verify</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Output.php.html#737"><abbr title="CI_Output::delete_cache">delete_cache</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="Loader.php.html#717"><abbr title="CI_Loader::driver">driver</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Router.php.html#124"><abbr title="CI_Router::__construct">__construct</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Input.php.html#670"><abbr title="CI_Input::_clean_input_data">_clean_input_data</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Loader.php.html#190"><abbr title="CI_Loader::library">library</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Loader.php.html#370"><abbr title="CI_Loader::database">database</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Loader.php.html#438"><abbr title="CI_Loader::dbforge">dbforge</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Input.php.html#802"><abbr title="CI_Input::get_request_header">get_request_header</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Hooks.php.html#88"><abbr title="CI_Hooks::__construct">__construct</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Hooks.php.html#133"><abbr title="CI_Hooks::call_hook">call_hook</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Exceptions.php.html#157"><abbr title="CI_Exceptions::show_error">show_error</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Loader.php.html#817"><abbr title="CI_Loader::remove_package_path">remove_package_path</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Output.php.html#240"><abbr title="CI_Output::set_content_type">set_content_type</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="URI.php.html#151"><abbr title="CI_URI::_set_uri_string">_set_uri_string</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Input.php.html#758"><abbr title="CI_Input::request_headers">request_headers</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Router.php.html#332"><abbr title="CI_Router::_validate_request">_validate_request</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Exceptions.php.html#236"><abbr title="CI_Exceptions::show_php_error">show_php_error</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Security.php.html#1057"><abbr title="CI_Security::_csrf_set_hash">_csrf_set_hash</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Output.php.html#835"><abbr title="CI_Output::substr">substr</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Output.php.html#300"><abbr title="CI_Output::get_header">get_header</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Output.php.html#139"><abbr title="CI_Output::__construct">__construct</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Log.php.html#282"><abbr title="CI_Log::substr">substr</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Exceptions.php.html#190"><abbr title="CI_Exceptions::show_exception">show_exception</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Loader.php.html#406"><abbr title="CI_Loader::dbutil">dbutil</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Config.php.html#84"><abbr title="CI_Config::__construct">__construct</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Loader.php.html#1376"><abbr title="CI_Loader::_ci_prepare_view_vars">_ci_prepare_view_vars</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Utf8.php.html#60"><abbr title="CI_Utf8::__construct">__construct</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Router.php.html#248"><abbr title="CI_Router::_set_request">_set_request</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="URI.php.html#326"><abbr title="CI_URI::filter_uri">filter_uri</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="URI.php.html#300"><abbr title="CI_URI::_remove_relative_directory">_remove_relative_directory</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="URI.php.html#255"><abbr title="CI_URI::_parse_query_string">_parse_query_string</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Security.php.html#170"><abbr title="CI_Security::__construct">__construct</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Utf8.php.html#90"><abbr title="CI_Utf8::clean_string">clean_string</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Router.php.html#290"><abbr title="CI_Router::_set_default_controller">_set_default_controller</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Benchmark.php.html#95"><abbr title="CI_Benchmark::elapsed_time">elapsed_time</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Input.php.html#138"><abbr title="CI_Input::__construct">__construct</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Lang.php.html#190"><abbr title="CI_Lang::line">line</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Config.php.html#336"><abbr title="CI_Config::_uri_string">_uri_string</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Input.php.html#725"><abbr title="CI_Input::_clean_input_keys">_clean_input_keys</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Input.php.html#884"><abbr title="CI_Input::__get">__get</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Config.php.html#197"><abbr title="CI_Config::item">item</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Output.php.html#279"><abbr title="CI_Output::get_content_type">get_content_type</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Output.php.html#216"><abbr title="CI_Output::set_header">set_header</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Security.php.html#992"><abbr title="CI_Security::_filter_attributes">_filter_attributes</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Input.php.html#330"><abbr title="CI_Input::input_stream">input_stream</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Output.php.html#369"><abbr title="CI_Output::set_profiler_sections">set_profiler_sections</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Security.php.html#742"><abbr title="CI_Security::sanitize_filename">sanitize_filename</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Input.php.html#559"><abbr title="CI_Input::valid_ip">valid_ip</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Output.php.html#792"><abbr title="CI_Output::set_cache_header">set_cache_header</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Security.php.html#577"><abbr title="CI_Security::xss_hash">xss_hash</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Exceptions.php.html#119"><abbr title="CI_Exceptions::show_404">show_404</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Router.php.html#487"><abbr title="CI_Router::set_directory">set_directory</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Config.php.html#215"><abbr title="CI_Config::slash_item">slash_item</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Loader.php.html#520"><abbr title="CI_Loader::vars">vars</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Config.php.html#305"><abbr title="CI_Config::base_url">base_url</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="URI.php.html#555"><abbr title="CI_URI::_slash_segment">_slash_segment</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Utf8.php.html#135"><abbr title="CI_Utf8::convert_to_utf8">convert_to_utf8</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="URI.php.html#344"><abbr title="CI_URI::segment">segment</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="URI.php.html#364"><abbr title="CI_URI::rsegment">rsegment</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="URI.php.html#496"><abbr title="CI_URI::assoc_to_uri">assoc_to_uri</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller.php.html#66"><abbr title="CI_Controller::__construct">__construct</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="URI.php.html#284"><abbr title="CI_URI::_parse_argv">_parse_argv</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Output.php.html#393"><abbr title="CI_Output::cache">cache</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Exceptions.php.html#102"><abbr title="CI_Exceptions::log_exception">log_exception</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Input.php.html#268"><abbr title="CI_Input::post_get">post_get</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Input.php.html#284"><abbr title="CI_Input::get_post">get_post</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Security.php.html#1038"><abbr title="CI_Security::_do_never_allowed">_do_never_allowed</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Input.php.html#836"><abbr title="CI_Input::is_ajax_request">is_ajax_request</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Input.php.html#867"><abbr title="CI_Input::method">method</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Loader.php.html#559"><abbr title="CI_Loader::get_var">get_var</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Loader.php.html#800"><abbr title="CI_Loader::get_package_paths">get_package_paths</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Log.php.html#265"><abbr title="CI_Log::strlen">strlen</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Output.php.html#818"><abbr title="CI_Output::strlen">strlen</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Output.php.html#352"><abbr title="CI_Output::enable_profiler">enable_profiler</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Security.php.html#793"><abbr title="CI_Security::_urldecodespaces">_urldecodespaces</abbr></a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 5.2.2</a> using <a href="https://secure.php.net/" target="_top">PHP 7.1.10</a> with <a href="https://xdebug.org/">Xdebug 2.5.3</a> and <a href="https://phpunit.de/">PHPUnit 6.4.3</a> at Sun Nov 5 23:01:03 CET 2017.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../.js/jquery.min.js" type="text/javascript"></script>
+  <script src="../.js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="../.js/holder.min.js" type="text/javascript"></script>
+  <script src="../.js/d3.min.js" type="text/javascript"></script>
+  <script src="../.js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([13,1,0,0,0,0,0,1,0,0,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([161,0,1,0,0,0,0,0,0,0,0,2], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,6,"<a href=\"Benchmark.php.html#52\">CI_Benchmark<\/a>"],[0,43,"<a href=\"Config.php.html#51\">CI_Config<\/a>"],[0,3,"<a href=\"Controller.php.html#52\">CI_Controller<\/a>"],[0,23,"<a href=\"Exceptions.php.html#49\">CI_Exceptions<\/a>"],[0,31,"<a href=\"Hooks.php.html#51\">CI_Hooks<\/a>"],[0,109,"<a href=\"Input.php.html#51\">CI_Input<\/a>"],[0,26,"<a href=\"Lang.php.html#49\">CI_Lang<\/a>"],[0,170,"<a href=\"Loader.php.html#51\">CI_Loader<\/a>"],[8.620689655172415,35,"<a href=\"Log.php.html#49\">CI_Log<\/a>"],[66.66666666666666,2,"<a href=\"Model.php.html#49\">CI_Model<\/a>"],[0,98,"<a href=\"Output.php.html#51\">CI_Output<\/a>"],[0,54,"<a href=\"Router.php.html#51\">CI_Router<\/a>"],[0,90,"<a href=\"Security.php.html#49\">CI_Security<\/a>"],[0,75,"<a href=\"URI.php.html#51\">CI_URI<\/a>"],[0,14,"<a href=\"Utf8.php.html#51\">CI_Utf8<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"Benchmark.php.html#70\">CI_Benchmark::mark<\/a>"],[0,4,"<a href=\"Benchmark.php.html#95\">CI_Benchmark::elapsed_time<\/a>"],[0,1,"<a href=\"Benchmark.php.html#128\">CI_Benchmark::memory_usage<\/a>"],[0,5,"<a href=\"Config.php.html#84\">CI_Config::__construct<\/a>"],[0,13,"<a href=\"Config.php.html#126\">CI_Config::load<\/a>"],[0,4,"<a href=\"Config.php.html#197\">CI_Config::item<\/a>"],[0,3,"<a href=\"Config.php.html#215\">CI_Config::slash_item<\/a>"],[0,9,"<a href=\"Config.php.html#242\">CI_Config::site_url<\/a>"],[0,3,"<a href=\"Config.php.html#305\">CI_Config::base_url<\/a>"],[0,4,"<a href=\"Config.php.html#336\">CI_Config::_uri_string<\/a>"],[0,1,"<a href=\"Config.php.html#359\">CI_Config::system_url<\/a>"],[0,1,"<a href=\"Config.php.html#374\">CI_Config::set_item<\/a>"],[0,2,"<a href=\"Controller.php.html#66\">CI_Controller::__construct<\/a>"],[0,1,"<a href=\"Controller.php.html#91\">CI_Controller::get_instance<\/a>"],[0,1,"<a href=\"Exceptions.php.html#83\">CI_Exceptions::__construct<\/a>"],[0,2,"<a href=\"Exceptions.php.html#102\">CI_Exceptions::log_exception<\/a>"],[0,3,"<a href=\"Exceptions.php.html#119\">CI_Exceptions::show_404<\/a>"],[0,6,"<a href=\"Exceptions.php.html#157\">CI_Exceptions::show_error<\/a>"],[0,5,"<a href=\"Exceptions.php.html#190\">CI_Exceptions::show_exception<\/a>"],[0,6,"<a href=\"Exceptions.php.html#236\">CI_Exceptions::show_php_error<\/a>"],[0,6,"<a href=\"Hooks.php.html#88\">CI_Hooks::__construct<\/a>"],[0,6,"<a href=\"Hooks.php.html#133\">CI_Hooks::call_hook<\/a>"],[0,19,"<a href=\"Hooks.php.html#165\">CI_Hooks::_run_hook<\/a>"],[0,4,"<a href=\"Input.php.html#138\">CI_Input::__construct<\/a>"],[0,11,"<a href=\"Input.php.html#177\">CI_Input::_fetch_from_array<\/a>"],[0,1,"<a href=\"Input.php.html#240\">CI_Input::get<\/a>"],[0,1,"<a href=\"Input.php.html#254\">CI_Input::post<\/a>"],[0,2,"<a href=\"Input.php.html#268\">CI_Input::post_get<\/a>"],[0,2,"<a href=\"Input.php.html#284\">CI_Input::get_post<\/a>"],[0,1,"<a href=\"Input.php.html#300\">CI_Input::cookie<\/a>"],[0,1,"<a href=\"Input.php.html#314\">CI_Input::server<\/a>"],[0,3,"<a href=\"Input.php.html#330\">CI_Input::input_stream<\/a>"],[0,16,"<a href=\"Input.php.html#362\">CI_Input::set_cookie<\/a>"],[0,22,"<a href=\"Input.php.html#422\">CI_Input::ip_address<\/a>"],[0,3,"<a href=\"Input.php.html#559\">CI_Input::valid_ip<\/a>"],[0,1,"<a href=\"Input.php.html#584\">CI_Input::user_agent<\/a>"],[0,9,"<a href=\"Input.php.html#602\">CI_Input::_sanitize_globals<\/a>"],[0,7,"<a href=\"Input.php.html#670\">CI_Input::_clean_input_data<\/a>"],[0,4,"<a href=\"Input.php.html#725\">CI_Input::_clean_input_keys<\/a>"],[0,6,"<a href=\"Input.php.html#758\">CI_Input::request_headers<\/a>"],[0,6,"<a href=\"Input.php.html#802\">CI_Input::get_request_header<\/a>"],[0,2,"<a href=\"Input.php.html#836\">CI_Input::is_ajax_request<\/a>"],[0,1,"<a href=\"Input.php.html#851\">CI_Input::is_cli_request<\/a>"],[0,2,"<a href=\"Input.php.html#867\">CI_Input::method<\/a>"],[0,4,"<a href=\"Input.php.html#884\">CI_Input::__get<\/a>"],[0,1,"<a href=\"Lang.php.html#70\">CI_Lang::__construct<\/a>"],[0,21,"<a href=\"Lang.php.html#88\">CI_Lang::load<\/a>"],[0,4,"<a href=\"Lang.php.html#190\">CI_Lang::line<\/a>"],[0,1,"<a href=\"Loader.php.html#136\">CI_Loader::__construct<\/a>"],[0,1,"<a href=\"Loader.php.html#155\">CI_Loader::initialize<\/a>"],[0,1,"<a href=\"Loader.php.html#172\">CI_Loader::is_loaded<\/a>"],[0,7,"<a href=\"Loader.php.html#190\">CI_Loader::library<\/a>"],[0,24,"<a href=\"Loader.php.html#234\">CI_Loader::model<\/a>"],[0,7,"<a href=\"Loader.php.html#370\">CI_Loader::database<\/a>"],[0,5,"<a href=\"Loader.php.html#406\">CI_Loader::dbutil<\/a>"],[0,7,"<a href=\"Loader.php.html#438\">CI_Loader::dbforge<\/a>"],[0,1,"<a href=\"Loader.php.html#487\">CI_Loader::view<\/a>"],[0,1,"<a href=\"Loader.php.html#501\">CI_Loader::file<\/a>"],[0,3,"<a href=\"Loader.php.html#520\">CI_Loader::vars<\/a>"],[0,1,"<a href=\"Loader.php.html#543\">CI_Loader::clear_vars<\/a>"],[0,2,"<a href=\"Loader.php.html#559\">CI_Loader::get_var<\/a>"],[0,1,"<a href=\"Loader.php.html#573\">CI_Loader::get_vars<\/a>"],[0,12,"<a href=\"Loader.php.html#586\">CI_Loader::helper<\/a>"],[0,1,"<a href=\"Loader.php.html#663\">CI_Loader::helpers<\/a>"],[0,1,"<a href=\"Loader.php.html#679\">CI_Loader::language<\/a>"],[0,1,"<a href=\"Loader.php.html#698\">CI_Loader::config<\/a>"],[0,7,"<a href=\"Loader.php.html#717\">CI_Loader::driver<\/a>"],[0,1,"<a href=\"Loader.php.html#773\">CI_Loader::add_package_path<\/a>"],[0,2,"<a href=\"Loader.php.html#800\">CI_Loader::get_package_paths<\/a>"],[0,6,"<a href=\"Loader.php.html#817\">CI_Loader::remove_package_path<\/a>"],[0,19,"<a href=\"Loader.php.html#876\">CI_Loader::_ci_load<\/a>"],[0,10,"<a href=\"Loader.php.html#1010\">CI_Loader::_ci_load_library<\/a>"],[0,11,"<a href=\"Loader.php.html#1104\">CI_Loader::_ci_load_stock_library<\/a>"],[0,15,"<a href=\"Loader.php.html#1194\">CI_Loader::_ci_init_library<\/a>"],[0,16,"<a href=\"Loader.php.html#1294\">CI_Loader::_ci_autoloader<\/a>"],[0,5,"<a href=\"Loader.php.html#1376\">CI_Loader::_ci_prepare_view_vars<\/a>"],[0,1,"<a href=\"Loader.php.html#1406\">CI_Loader::_ci_get_component<\/a>"],[0,14,"<a href=\"Log.php.html#121\">CI_Log::__construct<\/a>"],[16.666666666666664,13,"<a href=\"Log.php.html#170\">CI_Log::write_log<\/a>"],[0,1,"<a href=\"Log.php.html#252\">CI_Log::_format_line<\/a>"],[0,2,"<a href=\"Log.php.html#265\">CI_Log::strlen<\/a>"],[0,5,"<a href=\"Log.php.html#282\">CI_Log::substr<\/a>"],[100,1,"<a href=\"Model.php.html#56\">CI_Model::__construct<\/a>"],[0,1,"<a href=\"Model.php.html#71\">CI_Model::__get<\/a>"],[0,5,"<a href=\"Output.php.html#139\">CI_Output::__construct<\/a>"],[0,1,"<a href=\"Output.php.html#165\">CI_Output::get_output<\/a>"],[0,1,"<a href=\"Output.php.html#180\">CI_Output::set_output<\/a>"],[0,1,"<a href=\"Output.php.html#196\">CI_Output::append_output<\/a>"],[0,3,"<a href=\"Output.php.html#216\">CI_Output::set_header<\/a>"],[0,6,"<a href=\"Output.php.html#240\">CI_Output::set_content_type<\/a>"],[0,3,"<a href=\"Output.php.html#279\">CI_Output::get_content_type<\/a>"],[0,5,"<a href=\"Output.php.html#300\">CI_Output::get_header<\/a>"],[0,1,"<a href=\"Output.php.html#338\">CI_Output::set_status_header<\/a>"],[0,2,"<a href=\"Output.php.html#352\">CI_Output::enable_profiler<\/a>"],[0,3,"<a href=\"Output.php.html#369\">CI_Output::set_profiler_sections<\/a>"],[0,2,"<a href=\"Output.php.html#393\">CI_Output::cache<\/a>"],[0,21,"<a href=\"Output.php.html#415\">CI_Output::_display<\/a>"],[0,14,"<a href=\"Output.php.html#553\">CI_Output::_write_cache<\/a>"],[0,12,"<a href=\"Output.php.html#659\">CI_Output::_display_cache<\/a>"],[0,8,"<a href=\"Output.php.html#737\">CI_Output::delete_cache<\/a>"],[0,3,"<a href=\"Output.php.html#792\">CI_Output::set_cache_header<\/a>"],[0,2,"<a href=\"Output.php.html#818\">CI_Output::strlen<\/a>"],[0,5,"<a href=\"Output.php.html#835\">CI_Output::substr<\/a>"],[0,7,"<a href=\"Router.php.html#124\">CI_Router::__construct<\/a>"],[0,14,"<a href=\"Router.php.html#155\">CI_Router::_set_routing<\/a>"],[0,5,"<a href=\"Router.php.html#248\">CI_Router::_set_request<\/a>"],[0,4,"<a href=\"Router.php.html#290\">CI_Router::_set_default_controller<\/a>"],[0,6,"<a href=\"Router.php.html#332\">CI_Router::_validate_request<\/a>"],[0,10,"<a href=\"Router.php.html#370\">CI_Router::_parse_routes<\/a>"],[0,1,"<a href=\"Router.php.html#434\">CI_Router::set_class<\/a>"],[0,1,"<a href=\"Router.php.html#447\">CI_Router::fetch_class<\/a>"],[0,1,"<a href=\"Router.php.html#460\">CI_Router::set_method<\/a>"],[0,1,"<a href=\"Router.php.html#473\">CI_Router::fetch_method<\/a>"],[0,3,"<a href=\"Router.php.html#487\">CI_Router::set_directory<\/a>"],[0,1,"<a href=\"Router.php.html#510\">CI_Router::fetch_directory<\/a>"],[0,5,"<a href=\"Security.php.html#170\">CI_Security::__construct<\/a>"],[0,9,"<a href=\"Security.php.html#206\">CI_Security::csrf_verify<\/a>"],[100,3,"<a href=\"Security.php.html#262\">CI_Security::csrf_set_cookie<\/a>"],[0,1,"<a href=\"Security.php.html#293\">CI_Security::csrf_show_error<\/a>"],[0,1,"<a href=\"Security.php.html#306\">CI_Security::get_csrf_hash<\/a>"],[0,1,"<a href=\"Security.php.html#319\">CI_Security::get_csrf_token_name<\/a>"],[0,13,"<a href=\"Security.php.html#352\">CI_Security::xss_clean<\/a>"],[0,3,"<a href=\"Security.php.html#577\">CI_Security::xss_hash<\/a>"],[0,12,"<a href=\"Security.php.html#598\">CI_Security::get_random_bytes<\/a>"],[0,11,"<a href=\"Security.php.html#667\">CI_Security::entity_decode<\/a>"],[0,3,"<a href=\"Security.php.html#742\">CI_Security::sanitize_filename<\/a>"],[0,1,"<a href=\"Security.php.html#772\">CI_Security::strip_image_tags<\/a>"],[0,2,"<a href=\"Security.php.html#793\">CI_Security::_urldecodespaces<\/a>"],[0,1,"<a href=\"Security.php.html#814\">CI_Security::_compact_exploded_words<\/a>"],[0,9,"<a href=\"Security.php.html#830\">CI_Security::_sanitize_naughty_html<\/a>"],[0,1,"<a href=\"Security.php.html#925\">CI_Security::_js_link_removal<\/a>"],[0,1,"<a href=\"Security.php.html#953\">CI_Security::_js_img_removal<\/a>"],[0,1,"<a href=\"Security.php.html#975\">CI_Security::_convert_attribute<\/a>"],[0,3,"<a href=\"Security.php.html#992\">CI_Security::_filter_attributes<\/a>"],[0,1,"<a href=\"Security.php.html#1015\">CI_Security::_decode_entity<\/a>"],[0,2,"<a href=\"Security.php.html#1038\">CI_Security::_do_never_allowed<\/a>"],[0,6,"<a href=\"Security.php.html#1057\">CI_Security::_csrf_set_hash<\/a>"],[0,10,"<a href=\"URI.php.html#99\">CI_URI::__construct<\/a>"],[0,6,"<a href=\"URI.php.html#151\">CI_URI::_set_uri_string<\/a>"],[0,12,"<a href=\"URI.php.html#197\">CI_URI::_parse_request_uri<\/a>"],[0,5,"<a href=\"URI.php.html#255\">CI_URI::_parse_query_string<\/a>"],[0,2,"<a href=\"URI.php.html#284\">CI_URI::_parse_argv<\/a>"],[0,5,"<a href=\"URI.php.html#300\">CI_URI::_remove_relative_directory<\/a>"],[0,5,"<a href=\"URI.php.html#326\">CI_URI::filter_uri<\/a>"],[0,2,"<a href=\"URI.php.html#344\">CI_URI::segment<\/a>"],[0,2,"<a href=\"URI.php.html#364\">CI_URI::rsegment<\/a>"],[0,1,"<a href=\"URI.php.html#391\">CI_URI::uri_to_assoc<\/a>"],[0,1,"<a href=\"URI.php.html#409\">CI_URI::ruri_to_assoc<\/a>"],[0,11,"<a href=\"URI.php.html#428\">CI_URI::_uri_to_assoc<\/a>"],[0,2,"<a href=\"URI.php.html#496\">CI_URI::assoc_to_uri<\/a>"],[0,1,"<a href=\"URI.php.html#519\">CI_URI::slash_segment<\/a>"],[0,1,"<a href=\"URI.php.html#535\">CI_URI::slash_rsegment<\/a>"],[0,3,"<a href=\"URI.php.html#555\">CI_URI::_slash_segment<\/a>"],[0,1,"<a href=\"URI.php.html#578\">CI_URI::segment_array<\/a>"],[0,1,"<a href=\"URI.php.html#590\">CI_URI::rsegment_array<\/a>"],[0,1,"<a href=\"URI.php.html#602\">CI_URI::total_segments<\/a>"],[0,1,"<a href=\"URI.php.html#614\">CI_URI::total_rsegments<\/a>"],[0,1,"<a href=\"URI.php.html#626\">CI_URI::uri_string<\/a>"],[0,1,"<a href=\"URI.php.html#638\">CI_URI::ruri_string<\/a>"],[0,5,"<a href=\"Utf8.php.html#60\">CI_Utf8::__construct<\/a>"],[0,4,"<a href=\"Utf8.php.html#90\">CI_Utf8::clean_string<\/a>"],[0,1,"<a href=\"Utf8.php.html#119\">CI_Utf8::safe_ascii_for_xml<\/a>"],[0,3,"<a href=\"Utf8.php.html#135\">CI_Utf8::convert_to_utf8<\/a>"],[0,1,"<a href=\"Utf8.php.html#159\">CI_Utf8::is_ascii<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

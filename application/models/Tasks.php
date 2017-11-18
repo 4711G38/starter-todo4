@@ -1,16 +1,17 @@
 <?php
-
 /**
  *
  *
  * @author Tim
  */
- class Tasks extends CSV_Model {
+ class Tasks extends XML_Model {
+   
+         public function __construct()
+         {
+                 parent::__construct(APPPATH . '../data/tasks.xml', 'id');
+         }
 
-     public function __construct()
-     {
-             parent::__construct(APPPATH . '../data/tasks.csv', 'id');
-     }
+         function getCategorizedTasks()
 
      function getCategorizedTasks()
       {
