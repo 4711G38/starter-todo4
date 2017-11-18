@@ -62,12 +62,12 @@
   </todo>
   <todo>
     <id>6</id>
-    <task>Helloooo</task>
+    <task>fafafaaf</task>
     <priority>1</priority>
     <size>1</size>
     <group>1</group>
-    <deadline>0</deadline>
+    <deadline/>
     <status>1</status>
-    <flag>0</flag>
+    <flag/>
   </todo>
 </tasks>
