@@ -137,7 +137,7 @@ $autoload['model'] = array('app', 'tasks');
 
 
 /* Sessions parser */
-$autoload['libraries'] = array('parser', 'parsedown','session');
+$autoload['libraries'] = array('parser', 'parsedown', 'session', 'curl', 'format', 'rest');
 
 
 $autoload['packages'] = array(APPPATH.'third_party/restful/');
